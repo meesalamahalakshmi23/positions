@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BR Architects</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      position: relative;
+      max-width: 1500px;
+      margin: auto;
+    }
+
+    nav {
+      background-color: white;
+      padding: 16px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 800px;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #e70707;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 16px 32px;
+    }
+
+    h3 {
+      border-bottom: 2px solid hsl(0, 100%, 29%);
+      padding-bottom: 8px;
+      margin-bottom: 24px;
+     
+     
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .card {
+      flex: 1 1 calc(25% - 16px);
+      min-width: 240px;
+      position: relative;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card p {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #f1040499;
+      color: white;
+      padding: 8px;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .team-member {
+      text-align: center; 
+    }
+
+    .contact-form input,
+    .contact-form button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      
+    }
+
+    footer {
+      background: black;
+      color: rgba(250, 6, 6, 0.941);
+      text-align: center;
+      padding: 16px;
+      margin-top: 32px;
+      
+      
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div><strong>BR</strong> Architects</div>
+    <div>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <img src="https://images.unsplash.com/photo-1505843513577-22bb7d21e455?auto=format&fit=crop&w=1500&q=80" alt="Architecture">
+    <div class="hero-text">
+      <h1><span style="background:lab(0.82% 0 0); padding:5px;">BR</span> <span style="color:hsl(0, 14%, 96%);">Architects</span></h1>
+    </div>
+  </header>
+
+  <div class="container" id="projects">
+    <h3>Projects</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Summer House">
+        <p>Summer House</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" alt="Brick House">
+        <p>Brick House</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Renovated">
+        <p>Renovated</p>
+      </div>
+      <div class="card">
+           <img src="https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=800&q=80" alt="Barn House">
+        <p>Barn House</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="about">
+    <h3>About</h3>
+    <p>We are a creative team of architects and designers with a passion for building beautiful, sustainable homes and projects. With years of experience, we specialize in residential, commercial, and renovation architecture.</p>
+  </div>
+
+  <div class="container">
+    <h3>Team</h3>
+    <div class="grid">
+      <div class="card team-member">
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=400&q=80" alt="John Doe">
+        <p>John Doe</p>
+      </div>
+      <div class="card team-member">
+        <img src="https://images.unsplash.com/photo-1597466765990-64ad1c35dafc?auto=format&fit=crop&w=600&q=80" alt="Jane Doe">
+        <p>Jane Doe</p>
+     </div>
+      <div class="card team-member">
+        <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?auto=format&fit=crop&w=600&q=80" alt="Mike Ross">
+        <p>Mike Ross</p>
+      </div>
+      <div class="card team-member">
+        <img src="https://thumbs.dreamstime.com/b/portrait-engineer-man-glasses-office-display-windmill-design-online-renewable-energy-business-designer-374019336.jpg" alt="Dan Star">
+        <p>Dan Star</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="contact">
+    <h3>Contact</h3>
+    <p>Let's get in touch and talk about your next project.</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Name"   required >
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Subject" required>
+      <input type="text" placeholder="Comment" required>
+     <button type="submit">SEND MESSAGE</button>
+
+    </form>
+  </div>
+
+  <div class="container">
+    <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=1500&q=80" style="width:100%; margin-top:16px;">
+  </div>
+
+  <footer>
+    <p>Powered by BR Architects</p>
+  </footer>
+
+</body>
+</html>
